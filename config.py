@@ -14,9 +14,3 @@ WHITE_LIST = [385980042]
 BOT_TOKEN = os.getenv('BOT_TOKEN') #botFather
 
 URL_CHECK: str = "https://api.imeicheck.net/v1/checks"
-
-
-# model_config = SettingsConfigDict(
-#     env_file=join(dirname(__file__), '.env'),
-#     env_file_encoding='utf-8'
-# )
