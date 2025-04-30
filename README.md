@@ -10,15 +10,19 @@
 
 Ограничение доступа только для пользователей из белого списка
 
-## 🧩 Технологии
-Python 3.10+
-
-Aiogram 3.x
-
-httpx — асинхронный HTTP-клиент
-
+## ⚙️ Установка
+Клонируй репозиторий:
+```bash
+git clone https://github.com/IBakuda/imei
+cd your_repo
+```
+Установи зависимости:
+```bash
+pip install -r requirements.txt
+```
+Создай файл config.py рядом с main.py и укажи в нем следующее:
 ```python
-BOT_TOKEN = "ваш_telegram_bot_token"
+BOT_TOKEN = "ваш_telegram_bot_token" # BotFather в телеграмм
 # Получение данных происходит через сервис imeicheck.net. 
 # Для полноценной работы бота необходимо получить API-токен сервиса и оплатить подписку по необходимому вам тарифу.
 API_TOKEN = "ваш_api_token" 
@@ -26,7 +30,15 @@ URL_CHECK: str = "https://api.imeicheck.net/v1/checks"  # URL для запро�
 SERVICE_ID = 12
 WHITE_LIST = [123456789, 987654321]  # список Telegram user_id, которым разрешен доступ
 ```
+⚠️ Не публикуй config.py в открытый доступ!
 
+
+## 🧩 Технологии
+Python 3.10+
+
+Aiogram 3.x
+
+httpx — асинхронный HTTP-клиент
 
 
 ## ✅ Использование
